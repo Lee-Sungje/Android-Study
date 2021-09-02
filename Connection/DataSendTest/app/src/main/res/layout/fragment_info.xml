@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.info.InfoFragment">
+
+        <TextView
+            android:id="@+id/tv_info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            style="@style/TextView.Title"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/tv_info_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_info_title"
+            style="@style/TextView.Album"
+            tools:text="Album" />
+
+        <TextView
+            android:id="@+id/tv_info_singer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_info_album"
+            style="@style/TextView.Singer"
+            tools:text="Singer" />
+
+        <ImageView
+            android:id="@+id/iv_info_cover"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/tv_info_singer"
+            android:layout_centerHorizontal="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_info_lyrics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_info_cover"
+            android:layout_centerHorizontal="true"
+            tools:listitem="@layout/item_lyrics"
+            android:scrollbars="vertical"
+            style="@style/RecyclerView" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Seekbar Test</string>
+    <string name="all_play">Play</string>
+    <string name="all_pause">Pause</string>
+</resources>

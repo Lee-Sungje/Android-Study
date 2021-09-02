@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/info_fragment">
+
+    <fragment
+        android:id="@+id/info_fragment"
+        android:name="com.sungje365.datasendtest.ui.info.InfoFragment"
+        android:label="InfoFragment" >
+        <action
+            android:id="@+id/action_info_to_lyrics"
+            app:destination="@id/lyrics_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lyrics_fragment"
+        android:name="com.sungje365.datasendtest.ui.lyrics.LyricsFragment"
+        android:label="LyricsFragment" >
+        <action
+            android:id="@+id/action_lyrics_to_info"
+            app:destination="@id/info_fragment" />
+    </fragment>
+</navigation>

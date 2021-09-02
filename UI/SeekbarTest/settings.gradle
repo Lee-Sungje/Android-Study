@@ -1,0 +1,2 @@
+rootProject.name = "Seekbar Test"
+include ':app'

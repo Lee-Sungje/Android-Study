@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="mainViewModel"
+            type="com.sungje365.datasendtest.ui.main.MainViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/frag_main"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation_graph" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingBottom="16dp">
+
+            <SeekBar
+                android:id="@+id/sb_main_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/tv_main_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sb_main_duration"
+                android:layout_alignParentStart="true"
+                tools:text="00:00" />
+
+            <TextView
+                android:id="@+id/tv_main_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sb_main_duration"
+                android:layout_alignParentEnd="true"
+                tools:text="00:00" />
+
+            <ImageButton
+                android:id="@+id/ib_main_playlist"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/background_main_playlist" />
+
+            <ImageButton
+                android:id="@+id/ib_main_previous"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@id/tb_main_play"
+                android:background="@drawable/background_main_previous" />
+
+            <ToggleButton
+                android:id="@+id/tb_main_play"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_main_play"
+                android:onClick="@{() -> mainViewModel.playMusic()}"
+                android:textOn=""
+                android:textOff="" />
+
+            <ImageButton
+                android:id="@+id/ib_main_next"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/tb_main_play"
+                android:background="@drawable/background_main_next" />
+
+            <ImageButton
+                android:id="@+id/ib_main_lyrics"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/background_main_lyrics" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TextView Style -->
+    <style name="TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+    <style name="TextView.Title" parent="TextView">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextView.Album" parent="TextView">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="TextView.Singer" parent="TextView">
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

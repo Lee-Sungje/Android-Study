@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MVVM Example</string>
+    <string name="all_add">Add</string>
+    <string name="all_done">Done</string>
+    <string name="add_empty">Please enter name and number.</string>
+    <string name="add_name">Input Name</string>
+    <string name="add_number">Input Number</string>
+</resources>

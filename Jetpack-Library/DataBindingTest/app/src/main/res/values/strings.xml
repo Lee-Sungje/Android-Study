@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Data Binding Test</string>
+    <string name="all_clear">Clear</string>
+    <string name="all_change">Change</string>
+</resources>

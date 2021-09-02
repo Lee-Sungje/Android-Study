@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Navigation Test</string>
+    <string name="all_first">1</string>
+    <string name="all_second">2</string>
+    <string name="all_third">3</string>
+    <string name="frag_goto1">GOTO1</string>
+    <string name="frag_goto2">GOTO2</string>
+    <string name="frag_goto3">GOTO3</string>
+</resources>
